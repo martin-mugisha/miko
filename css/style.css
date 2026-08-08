@@ -10317,6 +10317,51 @@ h5,
 .wrap-about {
   position: relative;
 }
+
+.how-we-work-section {
+  background: #f7f2ee;
+}
+.process-card {
+  height: 100%;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border-top: 3px solid #555111;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+.process-card .process-number {
+  display: block;
+  margin-bottom: .75rem;
+  color: #555111;
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+.process-card h3 {
+  margin-bottom: .75rem;
+  font-size: 1.2rem;
+}
+.process-card p {
+  margin-bottom: 0;
+}
+
+.about-intro { padding-bottom: 5rem; }
+.about-feature-image, .about-philosophy-image { width: 100%; min-height: 430px; object-fit: cover; }
+.about-lead { font-size: 1.25rem; line-height: 1.7; color: #3c312e; }
+.about-statement { margin-top: 1.5rem; font-size: 1.25rem; font-weight: 500; color: #555111; }
+.about-purpose-section { padding: 2rem 0; background: #3c312e; }
+.purpose-card { min-height: 290px; padding: 3rem; }
+.purpose-card span { display: block; margin-bottom: 1rem; font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.purpose-card h2 { font-size: 1.8rem; line-height: 1.25; }
+.mission-card { background: #555111; color: #fff; }
+.vision-card { background: #f7f2ee; color: #3c312e; }
+.about-philosophy-section { background: #fff; }
+.philosophy-item { min-height: 130px; padding: 1.25rem 0; border-top: 1px solid #ded8d2; }
+.philosophy-item strong { display: block; margin-bottom: .5rem; color: #555111; font-size: .85rem; letter-spacing: .05em; }
+.philosophy-item p { margin: 0; }
+.about-values { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+.about-values span { padding: .65rem 1rem; border: 1px solid #d9d0c9; border-radius: 999px; color: #3c312e; font-size: .9rem; }
+@media (max-width: 767.98px) { .about-feature-image, .about-philosophy-image { min-height: 300px; } .purpose-card { min-height: 0; padding: 2rem; } }
 @media (min-width: 768px) {
   .wrap-about {
     padding-left: 6em;
@@ -10420,6 +10465,22 @@ h5,
   opacity: 1;
   visibility: visible;
 }
+.portfolio-filters { gap: .65rem; }
+.portfolio-filter {
+  padding: .65rem 1.1rem;
+  border: 1px solid #1a1a1a;
+  background: #fff;
+  color: #1a1a1a;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .25s ease;
+}
+.portfolio-filter:hover { background: #1a1a1a; color: #fff; }
+.portfolio-filter.active { border-color: #555111; background: #555111; color: #fff; }
 .project:hover img,
 .project:focus img {
   -webkit-transform: scale(1.2);
@@ -10997,6 +11058,9 @@ textarea.form-control {
   color: #fff;
   display: block;
 }
+.ftco-counter .text strong.number.number-plus::after {
+  content: "+";
+}
 .ftco-counter .text span {
   display: block;
   font-size: 16px;
@@ -11045,6 +11109,19 @@ textarea.form-control {
 
 .contact-section .contact-info p a {
   color: #1a1a1a;
+}
+
+.contact-map {
+  display: block;
+  width: 100%;
+  min-height: 520px;
+  border: 0;
+}
+@media (max-width: 767.98px) {
+  .contact-map {
+    min-height: 360px;
+    margin-top: 2rem;
+  }
 }
 
 .block-9 .form-control {

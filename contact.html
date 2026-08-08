@@ -112,12 +112,13 @@
             <h2 class="h4">Contact Information</h2>
           </div>
           <div class="w-100"></div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <p>
-              <span>Address:</span> Plot 4 Ndagire Road, Naalya, Kampala, Uganda
+              <span>Address:</span>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Plot+4+Ndagire+Road%2C+Naalya%2C+Kampala%2C+Uganda" target="_blank" rel="noopener noreferrer">Plot 4 Ndagire Road, Naalya, Kampala, Uganda</a>
             </p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-2">
             <p>
               <span>Phone:</span>
               <a href="tel:+256764189493">+256 764 189 493</a>
@@ -131,32 +132,38 @@
           </div>
           <div class="col-md-3">
             <p>
-              <span>Website</span>
-              <a href="https://mikocreations.net">mikocreations.net</a>
+              <span>Business Hours:</span>
+              Mon–Fri: 8:30 AM–6:00 PM<br />Sat: 9:00 AM–5:00 PM<br />Sun &amp; public holidays: Closed
             </p>
           </div>
         </div>
         <div class="row block-9">
           <div class="col-md-6 order-md-last pr-md-5">
-            <form action="#">
+            <h2 class="h4 mb-4">Tell Us About Your Project</h2>
+            <form action="mailto:info@mikocreations.net" method="post" enctype="text/plain">
               <div class="form-group">
                 <input
                   type="text"
                   class="form-control"
+                  name="full_name"
                   placeholder="Full Name"
+                  required
                 />
               </div>
               <div class="form-group">
                 <input
                   type="email"
                   class="form-control"
+                  name="email"
                   placeholder="Email Address"
+                  required
                 />
               </div>
               <div class="form-group">
                 <input
                   type="text"
                   class="form-control"
+                  name="phone"
                   placeholder="Phone Number"
                 />
               </div>
@@ -164,6 +171,7 @@
                 <input
                   type="text"
                   class="form-control"
+                  name="project_type"
                   placeholder="Project Type"
                 />
               </div>
@@ -171,17 +179,19 @@
                 <input
                   type="text"
                   class="form-control"
+                  name="location"
                   placeholder="Location"
                 />
               </div>
               <div class="form-group">
                 <textarea
-                  name=""
-                  id=""
+                  name="message"
+                  id="message"
                   cols="30"
                   rows="7"
                   class="form-control"
                   placeholder="Message"
+                  required
                 ></textarea>
               </div>
               <div class="form-group">
@@ -195,7 +205,12 @@
           </div>
 
           <div class="col-md-6">
-            <div id="map"></div>
+            <iframe
+              class="contact-map"
+              title="MIKO Creations location"
+              src="https://www.google.com/maps?q=Plot%204%20Ndagire%20Road%2C%20Naalya%2C%20Kampala%2C%20Uganda&amp;output=embed"
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -342,8 +357,6 @@
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
     <script>
       (function () {

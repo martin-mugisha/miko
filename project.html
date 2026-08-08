@@ -86,7 +86,7 @@
     <section class="home-slider js-fullheight owl-carousel">
       <div
         class="slider-item js-fullheight"
-        style="background-image: url(images/bg_1.jpeg)"
+        style="background-image: url(website%20pics/TALI%20CAFE/poertifolio.jpeg)"
       >
         <div class="overlay"></div>
         <div class="container">
@@ -121,33 +121,21 @@
         </div>
         <div class="row justify-content-center mb-4">
           <div class="col-md-10">
-            <div class="d-flex flex-wrap justify-content-center">
-              <a href="#" class="btn btn-outline-primary mr-2 mb-2"
-                >All Projects</a
-              >
-              <a href="#" class="btn btn-outline-primary mr-2 mb-2"
-                >Residential</a
-              >
-              <a href="#" class="btn btn-outline-primary mr-2 mb-2"
-                >Corporate Offices</a
-              >
-              <a href="#" class="btn btn-outline-primary mr-2 mb-2"
-                >Healthcare</a
-              >
-              <a href="#" class="btn btn-outline-primary mr-2 mb-2"
-                >Hospitality</a
-              >
-              <a href="#" class="btn btn-outline-primary mr-2 mb-2">Retail</a>
-              <a href="#" class="btn btn-outline-primary mb-2"
-                >Landscape Design</a
-              >
+            <div class="portfolio-filters d-flex flex-wrap justify-content-center" aria-label="Filter projects">
+              <button class="portfolio-filter active" data-filter="all" type="button">All Projects</button>
+              <button class="portfolio-filter" data-filter="residential" type="button">Residential</button>
+              <button class="portfolio-filter" data-filter="office" type="button">Offices</button>
+              <button class="portfolio-filter" data-filter="healthcare" type="button">Healthcare</button>
+              <button class="portfolio-filter" data-filter="hospitality" type="button">Hospitality</button>
+              <button class="portfolio-filter" data-filter="landscape" type="button">Landscape</button>
+              <button class="portfolio-filter" data-filter="joinery" type="button">Joinery &amp; 3D</button>
             </div>
           </div>
         </div>
       </div>
       <div class="container-fluid">
-        <div class="row no-gutters">
-          <div class="col-md-6 col-lg-3 ftco-animate">
+        <div class="row no-gutters" id="project-grid">
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="residential">
             <div class="project">
               <img
                 src="website%20pics/BEDROOM%201/2%20(1).png"
@@ -160,13 +148,13 @@
               </div>
               <a
                 href="website%20pics/BEDROOM%201/2%20(1).png"
-                class="icon image-popup d-flex justify-content-center align-items-center"
+                class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="bedroom"
               >
                 <span class="icon-expand"></span>
               </a>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="hospitality">
             <div class="project">
               <img
                 src="website%20pics/BLUE%20BERRIES%20HOTEL/WhatsApp%20Image%202026-07-11%20at%2015.48.18%20(1).jpeg"
@@ -179,13 +167,13 @@
               </div>
               <a
                 href="website%20pics/BLUE%20BERRIES%20HOTEL/WhatsApp%20Image%202026-07-11%20at%2015.48.18%20(1).jpeg"
-                class="icon image-popup d-flex justify-content-center align-items-center"
+                class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="blueberries"
               >
                 <span class="icon-expand"></span>
               </a>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="healthcare">
             <div class="project">
               <img
                 src="website%20pics/CANCER%20INSTITUTE/1%20(1).png"
@@ -198,13 +186,13 @@
               </div>
               <a
                 href="website%20pics/CANCER%20INSTITUTE/1%20(1).png"
-                class="icon image-popup d-flex justify-content-center align-items-center"
+                class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="cancer"
               >
                 <span class="icon-expand"></span>
               </a>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="healthcare">
             <div class="project">
               <img
                 src="website%20pics/EYE%20SANTE/WhatsApp%20Image%202026-06-29%20at%2013.28.06.jpeg"
@@ -217,13 +205,13 @@
               </div>
               <a
                 href="website%20pics/EYE%20SANTE/WhatsApp%20Image%202026-06-29%20at%2013.28.06.jpeg"
-                class="icon image-popup d-flex justify-content-center align-items-center"
+                class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="eye"
               >
                 <span class="icon-expand"></span>
               </a>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="office">
             <div class="project">
               <img
                 src="website%20pics/GLOVO/GLOVO%20(1).png"
@@ -236,13 +224,13 @@
               </div>
               <a
                 href="website%20pics/GLOVO/GLOVO%20(1).png"
-                class="icon image-popup d-flex justify-content-center align-items-center"
+                class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="glovo"
               >
                 <span class="icon-expand"></span>
               </a>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="office">
             <div class="project">
               <img
                 src="website%20pics/INDIGO/INDIGO%20(2).png"
@@ -255,13 +243,13 @@
               </div>
               <a
                 href="website%20pics/INDIGO/INDIGO%20(2).png"
-                class="icon image-popup d-flex justify-content-center align-items-center"
+                class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="indigo"
               >
                 <span class="icon-expand"></span>
               </a>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="landscape">
             <div class="project">
               <img
                 src="website%20pics/KIGO%20LANDSCAPE/WhatsApp%20Image%202026-07-11%20at%2015.48.25%20(1).jpeg"
@@ -274,13 +262,13 @@
               </div>
               <a
                 href="website%20pics/KIGO%20LANDSCAPE/WhatsApp%20Image%202026-07-11%20at%2015.48.25%20(1).jpeg"
-                class="icon image-popup d-flex justify-content-center align-items-center"
+                class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="kigo"
               >
                 <span class="icon-expand"></span>
               </a>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="joinery residential">
             <div class="project">
               <img
                 src="website%20pics/Kitchens%20&%20wadrobes/KIGO%20(2).png"
@@ -293,12 +281,17 @@
               </div>
               <a
                 href="website%20pics/Kitchens%20&%20wadrobes/KIGO%20(2).png"
-                class="icon image-popup d-flex justify-content-center align-items-center"
+                class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="kitchens"
               >
                 <span class="icon-expand"></span>
               </a>
             </div>
           </div>
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="joinery residential"><div class="project"><img src="website%20pics/NAMULANDA%20KITCHEN/NAMULANDA%20(1).png" class="img-fluid" alt="Namulanda Kitchen" /><div class="text"><h3>Namulanda Kitchen</h3><span>Custom Joinery</span></div><a href="website%20pics/NAMULANDA%20KITCHEN/NAMULANDA%20(1).png" class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="namulanda"><span class="icon-expand"></span></a></div></div>
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="hospitality"><div class="project"><img src="website%20pics/TALI%20CAFE/poertifolio.jpeg" class="img-fluid" alt="Tali Cafe" /><div class="text"><h3>Tali Cafe</h3><span>Hospitality</span></div><a href="website%20pics/TALI%20CAFE/poertifolio.jpeg" class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="tali"><span class="icon-expand"></span></a></div></div>
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="residential"><div class="project"><img src="website%20pics/others/miko.jpeg" class="img-fluid" alt="Additional MIKO Creations project" /><div class="text"><h3>More MIKO Spaces</h3><span>Residential &amp; Commercial</span></div><a href="website%20pics/others/miko.jpeg" class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="others"><span class="icon-expand"></span></a></div></div>
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="joinery"><div class="project"><img src="website%20pics/renders/bg_1.jpeg" class="img-fluid" alt="3D visualisation" /><div class="text"><h3>3D Visualisations</h3><span>Design Development</span></div><a href="website%20pics/renders/bg_1.jpeg" class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="renders"><span class="icon-expand"></span></a></div></div>
+          <div class="col-md-6 col-lg-3 ftco-animate portfolio-item" data-category="healthcare"><div class="project"><img src="website%20pics/sight%20savers/WhatsApp%20Image%202026-06-29%20at%2012.57.34%20(1).jpeg" class="img-fluid" alt="Sight Savers" /><div class="text"><h3>Sight Savers</h3><span>Healthcare</span></div><a href="website%20pics/sight%20savers/WhatsApp%20Image%202026-06-29%20at%2012.57.34%20(1).jpeg" class="icon project-gallery-trigger d-flex justify-content-center align-items-center" data-gallery="sightsavers"><span class="icon-expand"></span></a></div></div>
         </div>
       </div>
     </section>
@@ -447,6 +440,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
     <script>
       (function () {
         var logo = document.getElementById("site-logo");
