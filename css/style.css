@@ -10739,6 +10739,15 @@ textarea.form-control {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.ftco-footer-social li a .tiktok-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  left: 50%;
+  fill: currentColor;
+  transform: translate(-50%, -50%);
+}
 .ftco-footer-social li a:hover {
   color: #fff;
 }
