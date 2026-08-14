@@ -10346,19 +10346,21 @@ h5,
 }
 
 .about-intro { padding-bottom: 5rem; }
-.about-feature-image, .about-philosophy-image { width: 100%; min-height: 430px; object-fit: cover; }
+.about-feature-image, .about-philosophy-image { width: 100%; min-height: 360px; max-height: 460px; object-fit: cover; border-radius: 12px; }
 .about-lead { font-size: 1.25rem; line-height: 1.7; color: #3c312e; }
 .about-statement { margin-top: 1.5rem; font-size: 1.25rem; font-weight: 500; color: #3c312e; }
 .about-purpose-section { padding: 2rem 0; background: #fff; }
 .purpose-card { min-height: 290px; padding: 3rem; }
 .purpose-card span { display: block; margin-bottom: 1rem; font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .purpose-card h2 { font-size: 1.8rem; line-height: 1.25; }
-.mission-card, .vision-card { background: #555111; color: #fff; }
+.mission-card, .vision-card { background: #fff; color: #555111; border: 1px solid rgba(85, 81, 17, .22); }
 .home-project-grid { max-width: 900px; }
 .home-project-grid .row { margin: -.65rem; }
 .home-project-grid .ftco-animate { padding: .65rem; }
 .home-project-grid .project { height: 330px; }
 @media (max-width: 767.98px) { .home-project-grid { max-width: 640px; } .home-project-grid .project { height: 280px; } }
+.home-who-image { min-height: 380px; max-height: 460px; align-self: center; border-radius: 12px; }
+.img-2 { border-radius: 12px; }
 .about-philosophy-section { background: #fff; }
 .philosophy-item { min-height: 130px; padding: 1.25rem 0; border-top: 1px solid #ded8d2; }
 .philosophy-item strong { display: block; margin-bottom: .5rem; color: #555111; font-size: .85rem; letter-spacing: .05em; }
@@ -10679,14 +10681,15 @@ textarea.form-control {
   padding: 6em 0;
 }
 
-.client-marquee-section { padding: 3.5rem 0; overflow: hidden; background: #3c312e; }
-.client-marquee-label { margin: 0 0 1.5rem; color: #f7f2ee; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-align: center; text-transform: uppercase; }
-.client-marquee { width: 100%; overflow: hidden; }
-.client-marquee-track { display: flex; width: max-content; gap: 1rem; animation: client-marquee-scroll 26s linear infinite; }
-.client-logo { display: flex; align-items: center; justify-content: center; width: 130px; height: 76px; padding: .65rem; background: #f7f2ee; border-radius: 4px; }
+.client-marquee-section { padding: 4.5rem 0; margin-top: 2rem; overflow: hidden; background: #fff; }
+.client-marquee-label { margin: 0 0 1.5rem; color: #555111; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-align: center; text-transform: uppercase; }
+.client-marquee { width: calc(100% - 30px); max-width: 760px; margin: 0 auto; }
+.client-marquee-track { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; width: 100%; }
+.client-logo { display: flex; align-items: center; justify-content: center; height: 92px; padding: .8rem; background: #fff; border: 1px solid rgba(85, 81, 17, .14); border-radius: 12px; box-shadow: 0 6px 16px rgba(60, 49, 46, .07); transition: transform .25s ease, box-shadow .25s ease; }
 .client-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
-@keyframes client-marquee-scroll { to { transform: translateX(calc(-50% - .5rem)); } }
-.client-marquee:hover .client-marquee-track { animation-play-state: paused; }
+.client-logo:nth-child(n+5) { display: none; }
+.client-logo:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 12px 22px rgba(60, 49, 46, .12); }
+@media (max-width: 575.98px) { .client-marquee-track { grid-template-columns: repeat(2, 1fr); } .client-logo { height: 84px; } }
 
 .services-showcase { background: #f7f2ee; }
 .service-card { height: 100%; overflow: hidden; background: #fff; box-shadow: 0 8px 24px rgba(60, 49, 46, .09); }
@@ -10699,6 +10702,34 @@ textarea.form-control {
 .service-card-list li { margin-bottom: .25rem; }
 .service-card .btn-custom { color: #3c312e; font-weight: 700; }
 .service-card .btn-custom:hover { color: #3c312e; }
+
+/* Subtle site-wide polish: spacing, depth, and primary-colour details. */
+body .ftco-section { padding: 7em 0; }
+body, p, li, input, textarea, select, button, .navbar-nav .nav-link, .btn, .btn-custom, .subheading, .service-card-number, .process-number, .client-marquee-label { font-family: "DM Sans", Arial, sans-serif; font-weight: 400; letter-spacing: .01em; }
+h1, h2, h3, h4, h5, h6, .heading-section h2, .slider-text h1, .project .text h3 { font-family: "Playfair Display", Georgia, serif; font-weight: 600; letter-spacing: 0; }
+.navbar-nav .nav-link, .btn, .btn-custom, .subheading, .service-card-number, .process-number, .client-marquee-label { letter-spacing: .04em; }
+.heading-section:not(.heading-section-with-line) h2::after { display: block; width: 48px; height: 3px; margin-top: .8rem; background: #555111; content: ""; }
+.text-center.heading-section:not(.heading-section-with-line) h2::after { margin-right: auto; margin-left: auto; }
+.process-card, .purpose-card, .service-card { border-radius: 12px; box-shadow: 0 12px 30px rgba(60, 49, 46, .09); }
+.project { border-radius: 12px; box-shadow: 0 10px 28px rgba(60, 49, 46, .12); }
+.project img { transition: transform .7s ease; }
+.project:hover img, .project:focus img { transform: scale(1.08); }
+.service-card { transition: transform .3s ease, box-shadow .3s ease; }
+.service-card-image { transition: transform .5s ease; }
+.service-card:hover { transform: translateY(-4px); box-shadow: 0 16px 34px rgba(60, 49, 46, .14); }
+.service-card:hover .service-card-image { transform: scale(1.03); }
+.about-values { gap: 1rem; }
+.about-values span { padding: .75rem 1.15rem; }
+@media (max-width: 767.98px) { body .ftco-section { padding: 4.75em 0; } }
+
+/* Keep headings clean: the display type provides enough hierarchy without rules. */
+.heading-section:not(.heading-section-with-line) h2::after,
+.heading-section.heading-section-with-line::after { display: none !important; }
+@media (max-width: 767.98px) {
+  html, body { height: auto !important; overflow-x: hidden; overflow-y: auto !important; }
+  body.menu-show { position: static; overflow-y: auto !important; }
+  .home-slider, .home-slider .owl-stage-outer { touch-action: pan-y; }
+}
 
 /* Portfolio collage dialog */
 .project-collage-dialog { position: relative; width: min(1200px, calc(100vw - 2rem)); max-height: 88vh; margin: 0 auto; padding: 2rem; overflow-y: auto; background: #fff; }

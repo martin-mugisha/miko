@@ -7,14 +7,17 @@
 
 	"use strict";
 
-	$(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    scrollProperty: 'scroll'
-  });
+	var isMobileViewport = window.matchMedia && window.matchMedia('(max-width: 767px)').matches;
+	if (!isMobileViewport) {
+		$(window).stellar({
+      responsive: true,
+      parallaxBackgrounds: true,
+      parallaxElements: true,
+      horizontalScrolling: false,
+      hideDistantElements: false,
+      scrollProperty: 'scroll'
+    });
+	}
 
 
 	var fullHeight = function() {
@@ -37,8 +40,10 @@
 	};
 	loader();
 
-	// Scrollax
-   $.Scrollax();
+	// Scrollax is disabled on mobile to avoid intercepting touch scrolling.
+  if (!isMobileViewport) {
+    $.Scrollax();
+  }
 
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
@@ -305,4 +310,3 @@
 
 
 })(jQuery);
-
