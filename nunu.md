@@ -15,7 +15,7 @@ Secondary Button
 View Our Projects
 WHO WE ARE
 Designing Spaces With Purpose
-At MIKO Creations, we believe every space tells a story.
+Miko Creations, we believe every space tells a story.
 As an interior and landscape design studio, we create environments that are functional,
 timeless, and deeply connected to the people who use them. Every project begins with
 understanding how a space should feel, how it should function, and the experience it should
@@ -87,7 +87,7 @@ the people who use it, improve daily experiences, and continue adding value long
 project is complete.Every project begins with understanding our clients—their lifestyle, business, aspirations,
 and the way they intend to use their spaces. Those insights become the foundation for
 environments that feel authentic, balanced, purposeful, and distinctly their own.
-At MIKO Creations, we don't simply design spaces.
+Miko Creations, we don't simply design spaces.
 We design experiences that people remember.
 OUR MISSION
 To design thoughtful, sustainable, and timeless spaces that inspire connection, evoke
