@@ -9612,9 +9612,9 @@ h5,
 }
 
 .ftco-navbar-light {
-  background: transparent !important;
+  background: rgba(20, 19, 19, 0.72) !important;
   position: absolute;
-  top: 20px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 3;
@@ -10348,13 +10348,17 @@ h5,
 .about-intro { padding-bottom: 5rem; }
 .about-feature-image, .about-philosophy-image { width: 100%; min-height: 430px; object-fit: cover; }
 .about-lead { font-size: 1.25rem; line-height: 1.7; color: #3c312e; }
-.about-statement { margin-top: 1.5rem; font-size: 1.25rem; font-weight: 500; color: #555111; }
-.about-purpose-section { padding: 2rem 0; background: #3c312e; }
+.about-statement { margin-top: 1.5rem; font-size: 1.25rem; font-weight: 500; color: #3c312e; }
+.about-purpose-section { padding: 2rem 0; background: #fff; }
 .purpose-card { min-height: 290px; padding: 3rem; }
 .purpose-card span { display: block; margin-bottom: 1rem; font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .purpose-card h2 { font-size: 1.8rem; line-height: 1.25; }
-.mission-card { background: #555111; color: #fff; }
-.vision-card { background: #f7f2ee; color: #3c312e; }
+.mission-card, .vision-card { background: #555111; color: #fff; }
+.home-project-grid { max-width: 900px; }
+.home-project-grid .row { margin: -.65rem; }
+.home-project-grid .ftco-animate { padding: .65rem; }
+.home-project-grid .project { height: 330px; }
+@media (max-width: 767.98px) { .home-project-grid { max-width: 640px; } .home-project-grid .project { height: 280px; } }
 .about-philosophy-section { background: #fff; }
 .philosophy-item { min-height: 130px; padding: 1.25rem 0; border-top: 1px solid #ded8d2; }
 .philosophy-item strong { display: block; margin-bottom: .5rem; color: #555111; font-size: .85rem; letter-spacing: .05em; }
@@ -10669,10 +10673,44 @@ textarea.form-control {
 }
 
 .ftco-footer {
+  margin-top: 3rem;
   font-size: 14px;
   background: #141313;
   padding: 6em 0;
 }
+
+.client-marquee-section { padding: 3.5rem 0; overflow: hidden; background: #3c312e; }
+.client-marquee-label { margin: 0 0 1.5rem; color: #f7f2ee; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-align: center; text-transform: uppercase; }
+.client-marquee { width: 100%; overflow: hidden; }
+.client-marquee-track { display: flex; width: max-content; gap: 1rem; animation: client-marquee-scroll 26s linear infinite; }
+.client-logo { display: flex; align-items: center; justify-content: center; width: 130px; height: 76px; padding: .65rem; background: #f7f2ee; border-radius: 4px; }
+.client-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+@keyframes client-marquee-scroll { to { transform: translateX(calc(-50% - .5rem)); } }
+.client-marquee:hover .client-marquee-track { animation-play-state: paused; }
+
+.services-showcase { background: #f7f2ee; }
+.service-card { height: 100%; overflow: hidden; background: #fff; box-shadow: 0 8px 24px rgba(60, 49, 46, .09); }
+.service-card-image { height: 230px; background-position: center; background-size: cover; }
+.service-card-body { padding: 1.8rem; }
+.service-card-number { display: block; margin-bottom: .65rem; color: #3c312e; font-size: .78rem; font-weight: 700; letter-spacing: .12em; }
+.service-card h2 { margin-bottom: 1rem; color: #3c312e; font-size: 1.35rem; }
+.service-card p { margin-bottom: 1.25rem; }
+.service-card-list { margin: 0 0 1.25rem; padding-left: 1.15rem; }
+.service-card-list li { margin-bottom: .25rem; }
+.service-card .btn-custom { color: #3c312e; font-weight: 700; }
+.service-card .btn-custom:hover { color: #3c312e; }
+
+/* Portfolio collage dialog */
+.project-collage-dialog { position: relative; width: min(1200px, calc(100vw - 2rem)); max-height: 88vh; margin: 0 auto; padding: 2rem; overflow-y: auto; background: #fff; }
+.project-collage-header { padding-right: 2.5rem; margin-bottom: 1.5rem; }
+.project-collage-header h2 { margin: 0 0 .35rem; color: #3c312e; font-size: clamp(1.5rem, 3vw, 2.25rem); }
+.project-collage-header p { margin: 0; }
+.project-collage-grid { columns: 3 250px; column-gap: 1rem; }
+.project-collage-image { display: block; break-inside: avoid; margin: 0 0 1rem; overflow: hidden; background: #f7f2ee; }
+.project-collage-image img { display: block; width: 100%; height: auto; transition: transform .35s ease; }
+.project-collage-image:hover img { transform: scale(1.03); }
+.mfp-wrap .project-collage-dialog .mfp-close { color: #3c312e; font-size: 32px; }
+@media (max-width: 575.98px) { .project-collage-dialog { width: calc(100vw - 1rem); max-height: 92vh; padding: 1.25rem; } .project-collage-grid { columns: 2 140px; column-gap: .65rem; } .project-collage-image { margin-bottom: .65rem; } }
 .ftco-footer .ftco-footer-logo {
   text-transform: uppercase;
   letter-spacing: 0.1em;

@@ -344,11 +344,11 @@ Styling & Home Staging
 Office Space Planning
 Follow Us
 Instagram
-@miko_creations_
+@miko*creations*
 LinkedIn
 MIKO Creations Ltd
 TikTok
-@miko_creationsContact
+@miko_creations_Contact
 � info@mikocreations.net
 � +256 764 189 493
 � Plot 4 Ndagire Road, Naalya, Kampala, Uganda
@@ -375,8 +375,6 @@ View Portfolio
 Explore Services
 Contact Us
 Contact FormFields:
-
-
 
 Full Name
 Email Address
