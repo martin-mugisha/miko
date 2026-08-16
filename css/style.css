@@ -9611,10 +9611,85 @@ h5,
   color: #555111 !important;
 }
 
+.miko-top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(14, 13, 13, 0.88);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 7px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.3s ease;
+}
+.miko-top-bar .top-bar-item,
+.miko-top-bar .top-bar-link {
+  color: rgba(255, 255, 255, 0.85);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "DM Sans", Arial, sans-serif;
+  transition: color 0.25s ease;
+}
+.miko-top-bar .top-bar-item:hover,
+.miko-top-bar .top-bar-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.miko-top-bar .icon {
+  color: #555111;
+  font-size: 13px;
+}
+.miko-top-bar .top-bar-social a {
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  margin-left: 6px;
+  font-size: 11px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.miko-top-bar .top-bar-social a:hover {
+  background: #555111;
+  color: #fff;
+}
+@media (max-width: 991.98px) {
+  .miko-top-bar {
+    position: relative;
+    background: #141313;
+    padding: 8px 0;
+    font-size: 12px;
+  }
+  .miko-top-bar .top-bar-left {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .miko-top-bar {
+    padding: 6px 0;
+    font-size: 11.5px;
+  }
+  .miko-top-bar .top-bar-left {
+    justify-content: center;
+    gap: 8px;
+  }
+  .miko-top-bar .top-bar-item {
+    margin-right: 0 !important;
+  }
+}
+
 .ftco-navbar-light {
   background: rgba(20, 19, 19, 0.72) !important;
   position: absolute;
-  top: 0;
+  top: 38px;
   left: 0;
   right: 0;
   z-index: 3;
