@@ -10800,10 +10800,33 @@ h1, h2, h3, h4, h5, h6, .heading-section h2, .slider-text h1, .project .text h3 
 /* Keep headings clean: the display type provides enough hierarchy without rules. */
 .heading-section:not(.heading-section-with-line) h2::after,
 .heading-section.heading-section-with-line::after { display: none !important; }
-@media (max-width: 767.98px) {
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+  touch-action: auto;
+}
+
+body.menu-show {
+  position: static !important;
+  overflow-y: auto !important;
+}
+
+.home-slider,
+.home-slider .owl-stage-outer,
+.home-slider .owl-stage,
+.home-slider .owl-item,
+.home-slider .slider-item,
+.home-slider .slider-text,
+.home-slider .overlay,
+.owl-carousel,
+.owl-carousel.owl-drag .owl-item {
+  touch-action: pan-y !important;
+  -ms-touch-action: pan-y !important;
+}
+
+@media (max-width: 991.98px) {
   html, body { height: auto !important; overflow-x: hidden; overflow-y: auto !important; }
-  body.menu-show { position: static; overflow-y: auto !important; }
-  .home-slider, .home-slider .owl-stage-outer { touch-action: pan-y; }
 }
 
 /* Portfolio collage dialog */

@@ -7,7 +7,8 @@
 
 	"use strict";
 
-	var isMobileViewport = window.matchMedia && window.matchMedia('(max-width: 767px)').matches;
+	var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+	var isMobileViewport = (window.matchMedia && window.matchMedia('(max-width: 991.98px)').matches) || isTouchDevice;
 	if (!isMobileViewport) {
 		$(window).stellar({
       responsive: true,
@@ -40,7 +41,7 @@
 	};
 	loader();
 
-	// Scrollax is disabled on mobile to avoid intercepting touch scrolling.
+	// Scrollax is disabled on mobile/touch to avoid intercepting touch scrolling.
   if (!isMobileViewport) {
     $.Scrollax();
   }
@@ -55,6 +56,10 @@
 	    nav:false,
 	    autoplayHoverPause: false,
 	    items: 1,
+	    mouseDrag: false,
+	    touchDrag: false,
+	    pullDrag: false,
+	    freeDrag: false,
 	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
 	    responsive:{
 	      0:{

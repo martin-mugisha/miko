@@ -26,8 +26,11 @@ $primary: #555111;
     transition:         all $transition ease;
 }
 
-html {
-	// overflow-x: hidden;
+html, body {
+	overflow-x: hidden;
+	overflow-y: auto !important;
+	-webkit-overflow-scrolling: touch;
+	touch-action: auto;
 }
 body {
 	font-family: $font-primary;
@@ -37,10 +40,8 @@ body {
 	font-weight: 300;
 	color: lighten($black,40%);
 	&.menu-show {
-		overflow: hidden;
-		position: fixed;
-		height: 100%;
-		width: 100%;
+		position: static !important;
+		overflow-y: auto !important;
 	}
 }
 a {
