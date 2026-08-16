@@ -63,10 +63,90 @@ h1, h2, h3, h4, h5,
 	color: $primary!important;
 }
 
+.miko-top-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	background: rgba(14, 13, 13, 0.88);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 7px 0;
+	font-size: 13px;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.85);
+	transition: all 0.3s ease;
+
+	.top-bar-item,
+	.top-bar-link {
+		color: rgba(255, 255, 255, 0.85);
+		display: inline-flex;
+		align-items: center;
+		text-decoration: none;
+		font-family: "DM Sans", Arial, sans-serif;
+		transition: color 0.25s ease;
+
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	.icon {
+		color: #555111;
+		font-size: 13px;
+	}
+
+	.top-bar-social a {
+		color: rgba(255, 255, 255, 0.8);
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.08);
+		margin-left: 6px;
+		font-size: 11px;
+		transition: background 0.25s ease, color 0.25s ease;
+
+		&:hover {
+			background: #555111;
+			color: #fff;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		position: relative;
+		background: #141313;
+		padding: 8px 0;
+		font-size: 12px;
+
+		.top-bar-left {
+			justify-content: center;
+			text-align: center;
+		}
+	}
+
+	@include media-breakpoint-down(xs) {
+		padding: 6px 0;
+		font-size: 11.5px;
+
+		.top-bar-left {
+			justify-content: center;
+			gap: 8px;
+		}
+
+		.top-bar-item {
+			margin-right: 0 !important;
+		}
+	}
+}
+
 .ftco-navbar-light {
 	background: transparent!important;
 	position: absolute;
-	top: 20px;
+	top: 38px;
 	left: 0;
 	right: 0;
 	z-index: 3;
