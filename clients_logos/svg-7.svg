@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 240" width="100%" height="100%">
+  <!-- Caduceus & Crab Crest Placeholder Graphic -->
+  <g transform="translate(190, 10)">
+    <path d="M 60 10 C 35 10 25 35 25 35 C 45 35 55 25 60 20 C 65 25 75 35 95 35 C 95 35 85 10 60 10 Z" fill="#808080" />
+    <line x1="60" y1="15" x2="60" y2="120" stroke="#111" stroke-width="4" />
+    <path d="M 25 90 C 25 65 95 65 95 90 C 95 110 25 110 25 90 Z" fill="#E62117" />
+  </g>
+  <!-- Yellow Banner -->
+  <g transform="translate(125, 125)">
+    <path d="M 0 10 L 40 25 L 210 25 L 250 10 L 230 45 L 20 45 Z" fill="#FFEA00" stroke="#000" stroke-width="2" />
+    <text x="125" y="38" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="28" font-weight="900" fill="#000" letter-spacing="12">UCI</text>
+  </g>
+  <!-- Organization Wordmark -->
+  <text x="250" y="210" text-anchor="middle" font-family="'Impact', 'Arial Black', 'Playfair Display', sans-serif" font-size="34" font-weight="900" fill="#0B0B0B" letter-spacing="1">Uganda Cancer Institute</text>
+</svg>

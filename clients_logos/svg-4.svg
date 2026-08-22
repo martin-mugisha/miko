@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 180" width="100%" height="100%">
+  <!-- Stylized Eye Ribbon Symbol -->
+  <path d="M 50 90 C 80 40, 140 40, 170 90 C 140 140, 80 140, 50 90 Z" fill="none" stroke="#00A896" stroke-width="12" stroke-linejoin="round" />
+  <circle cx="110" cy="90" r="22" fill="#028090" />
+  <circle cx="116" cy="84" r="7" fill="#FFFFFF" />
+  <!-- Brand Text -->
+  <text x="210" y="85" font-family="'Montserrat', sans-serif" font-size="44" font-weight="700" fill="#1D2D44" letter-spacing="3">EYE</text>
+  <text x="210" y="130" font-family="'Montserrat', sans-serif" font-size="36" font-weight="400" fill="#00A896" letter-spacing="6">SANTÉ</text>
+</svg>

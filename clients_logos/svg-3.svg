@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="100%" height="100%">
+  <!-- Red Cross Graphic -->
+  <g fill="#D32F2F">
+    <rect x="38" y="20" width="24" height="60" rx="3" />
+    <rect x="20" y="38" width="60" height="24" rx="3" />
+    <circle cx="50" cy="50" r="7" fill="#FFFFFF" />
+  </g>
+  <!-- Text Elements -->
+  <text x="110" y="52" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="800" fill="#1C355E" letter-spacing="2">PHARMA</text>
+  <text x="112" y="82" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="400" fill="#4B6584" letter-spacing="1">Sourcing</text>
+  <text x="114" y="106" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#D32F2F" letter-spacing="3">LTD</text>
+</svg>
