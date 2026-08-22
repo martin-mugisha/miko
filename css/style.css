@@ -10420,29 +10420,413 @@ h5,
   margin-bottom: 0;
 }
 
-.about-intro { padding-bottom: 5rem; }
-.about-feature-image, .about-philosophy-image { width: 100%; min-height: 360px; max-height: 460px; object-fit: cover; border-radius: 12px; }
-.about-lead { font-size: 1.25rem; line-height: 1.7; color: #3c312e; }
-.about-statement { margin-top: 1.5rem; font-size: 1.25rem; font-weight: 500; color: #3c312e; }
-.about-purpose-section { padding: 2rem 0; background: #fff; }
-.purpose-card { min-height: 290px; padding: 3rem; }
-.purpose-card span { display: block; margin-bottom: 1rem; font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.purpose-card h2 { font-size: 1.8rem; line-height: 1.25; }
-.mission-card, .vision-card { background: #fff; color: #555111; border: 1px solid rgba(85, 81, 17, .22); }
-.home-project-grid { max-width: 900px; }
-.home-project-grid .row { margin: -.65rem; }
-.home-project-grid .ftco-animate { padding: .65rem; }
-.home-project-grid .project { height: 330px; }
-@media (max-width: 767.98px) { .home-project-grid { max-width: 640px; } .home-project-grid .project { height: 280px; } }
-.home-who-image { min-height: 380px; max-height: 460px; align-self: center; border-radius: 12px; }
-.img-2 { border-radius: 12px; }
-.about-philosophy-section { background: #fff; }
-.philosophy-item { min-height: 130px; padding: 1.25rem 0; border-top: 1px solid #ded8d2; }
-.philosophy-item strong { display: block; margin-bottom: .5rem; color: #555111; font-size: .85rem; letter-spacing: .05em; }
-.philosophy-item p { margin: 0; }
-.about-values { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
-.about-values span { padding: .65rem 1rem; border: 1px solid #d9d0c9; border-radius: 999px; color: #3c312e; font-size: .9rem; }
-@media (max-width: 767.98px) { .about-feature-image, .about-philosophy-image { min-height: 300px; } .purpose-card { min-height: 0; padding: 2rem; } }
+/* Editorial About Page Styles */
+.hero-wrap.about-hero-editorial {
+  height: 520px;
+  min-height: 480px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.hero-wrap.about-hero-editorial .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(18, 17, 10, 0.86) 0%, rgba(35, 33, 18, 0.68) 100%);
+}
+.about-hero-subheading {
+  display: block;
+  letter-spacing: 2.5px;
+  color: #d4a373 !important;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.about-hero-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+@media (max-width: 767.98px) {
+  .hero-wrap.about-hero-editorial {
+    height: 400px;
+    min-height: 360px;
+  }
+  .about-hero-title {
+    font-size: 2.15rem;
+  }
+}
+
+/* About Intro Section */
+.about-intro {
+  padding-bottom: 5rem;
+  background: #ffffff;
+}
+.about-image-wrapper {
+  position: relative;
+}
+.about-feature-image {
+  width: 100%;
+  min-height: 380px;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+.about-badge {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  background: #555111;
+  color: #ffffff;
+  padding: 0.9rem 1.4rem;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(85, 81, 17, 0.35);
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.about-badge .badge-year {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+}
+.about-badge .badge-label {
+  font-size: 0.72rem;
+  opacity: 0.88;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.about-lead {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #2b281b;
+  font-weight: 400;
+}
+.about-quote-box {
+  padding: 1.5rem 1.75rem;
+  background: #fbf9f5;
+  border-left: 3.5px solid #555111;
+  border-radius: 0 8px 8px 0;
+}
+.about-quote-box .about-statement {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #2b281b;
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.6;
+}
+
+/* Mission & Vision Section */
+.about-purpose-section {
+  background: #fbf9f5;
+  padding: 4.5rem 0;
+}
+.purpose-card {
+  padding: 3.25rem 2.75rem;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.purpose-card:hover {
+  transform: translateY(-4px);
+}
+.purpose-card-mission {
+  background: #ffffff;
+  border: 1px solid rgba(85, 81, 17, 0.16);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+.purpose-card-mission:hover {
+  box-shadow: 0 18px 40px rgba(85, 81, 17, 0.08);
+}
+.purpose-card-vision {
+  background: #252414;
+  color: #ffffff;
+  border: 1px solid #38361f;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+.purpose-card-vision:hover {
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+}
+.purpose-card .purpose-tag {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #555111;
+}
+.purpose-card-vision .purpose-tag {
+  color: #d4a373;
+}
+.purpose-card .purpose-num {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.4rem;
+  opacity: 0.4;
+  font-weight: 600;
+}
+.purpose-card h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.85rem;
+  line-height: 1.3;
+  margin-bottom: 1.25rem;
+}
+.purpose-card-mission h2 {
+  color: #252414;
+}
+.purpose-card-vision h2 {
+  color: #ffffff;
+}
+.purpose-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+.purpose-card-mission p {
+  color: #5d564d;
+}
+.purpose-card-vision p {
+  color: rgba(255, 255, 255, 0.82);
+}
+@media (max-width: 767.98px) {
+  .purpose-card {
+    padding: 2.25rem 1.75rem;
+  }
+  .purpose-card h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Philosophy 5 Principles Section */
+.philosophy-section {
+  padding: 5.5rem 0;
+  background: #ffffff;
+}
+.philosophy-grid-5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.philosophy-card {
+  background: #fbf9f5;
+  padding: 2.25rem 1.75rem;
+  border-radius: 8px;
+  border-top: 3px solid transparent;
+  border: 1px solid #ebe6df;
+  border-top: 3px solid #ded8d2;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+}
+.philosophy-card:hover {
+  transform: translateY(-6px);
+  border-top-color: #555111;
+  background: #ffffff;
+  box-shadow: 0 16px 35px rgba(85, 81, 17, 0.12);
+}
+.philosophy-index {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #555111;
+  display: block;
+  margin-bottom: 0.65rem;
+}
+.philosophy-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1913;
+  margin-bottom: 0.75rem;
+}
+.philosophy-card p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #665f56;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .philosophy-grid-5 .col-lg {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+/* Values Editorial Grid Section */
+.values-section {
+  padding: 5.5rem 0;
+  background: #faf8f5;
+}
+.values-editorial-grid .value-block {
+  background: #ffffff;
+  border: 1px solid #ebe6df;
+  padding: 2.25rem 1.85rem;
+  border-radius: 8px;
+  height: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+.values-editorial-grid .value-block:hover {
+  border-color: #555111;
+  background: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(85, 81, 17, 0.08);
+}
+.values-editorial-grid .value-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #555111;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.values-editorial-grid h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #252414;
+  margin-bottom: 0.65rem;
+}
+.values-editorial-grid p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #665f56;
+  margin-bottom: 0;
+}
+
+/* MIKO by the Numbers Stats Bar */
+.miko-stats-section {
+  background: #1a1911 !important;
+  padding: 5rem 0;
+}
+.miko-stats-row {
+  margin-top: 1.5rem;
+}
+.miko-stat-item {
+  padding: 1.5rem 1rem;
+}
+.miko-stat-item .stat-number-wrap {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.miko-stat-item .number,
+.miko-stat-item .number-static {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+.miko-stat-item .stat-suffix,
+.miko-stat-item .stat-prefix {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.25rem;
+  color: #d4a373;
+  font-weight: 600;
+}
+.miko-stat-item .stat-caption {
+  display: block;
+  margin-top: 0.85rem;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* The People Behind the Work (Craft & Team) */
+.team-craft-section {
+  padding: 5.5rem 0;
+  background: #ffffff;
+}
+.team-craft-card {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #eee8e1;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.team-craft-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
+  border-color: #d4a373;
+}
+.team-craft-img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 0.5s ease;
+}
+.team-craft-card:hover .team-craft-img {
+  transform: scale(1.04);
+}
+.team-craft-content {
+  padding: 1.75rem 1.5rem;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.team-craft-content h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #252414;
+  margin-bottom: 0.25rem;
+}
+.team-craft-content .role-tag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #555111;
+  margin-bottom: 0.75rem;
+}
+.team-craft-content .desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #665f56;
+  margin-bottom: 0;
+}
+
+/* Final CTA Section */
+.about-cta-section {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  padding: 7rem 0;
+  position: relative;
+}
+.about-cta-section .cta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(17, 16, 9, 0.84) 0%, rgba(26, 24, 13, 0.94) 100%);
+}
+.about-cta-section h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.85rem;
+  line-height: 1.2;
+}
+@media (max-width: 767.98px) {
+  .about-cta-section {
+    padding: 5rem 0;
+  }
+  .about-cta-section h2 {
+    font-size: 2rem;
+  }
+}
 @media (min-width: 768px) {
   .wrap-about {
     padding-left: 6em;
