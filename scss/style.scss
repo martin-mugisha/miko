@@ -1888,13 +1888,17 @@ textarea.form-control {
   }
 }
 
-// Editorial About Page Styles
-.hero-wrap.about-hero-editorial {
-  height: 520px;
-  min-height: 480px;
+// Editorial Page Hero Styles (Matching Home Hero Height)
+.hero-wrap.about-hero-editorial,
+.hero-wrap.page-hero-editorial {
+  height: 100vh;
+  min-height: 100vh;
   position: relative;
   background-size: cover;
   background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .overlay {
     position: absolute;
     top: 0;
@@ -1903,8 +1907,13 @@ textarea.form-control {
     bottom: 0;
     background: linear-gradient(135deg, rgba(18, 17, 10, 0.86) 0%, rgba(35, 33, 18, 0.68) 100%);
   }
+  .slider-text {
+    height: 100vh;
+    min-height: 100vh;
+  }
 }
-.about-hero-subheading {
+.about-hero-subheading,
+.page-hero-subheading {
   display: block;
   letter-spacing: 2.5px;
   color: #d4a373 !important;
@@ -1913,15 +1922,16 @@ textarea.form-control {
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
-.about-hero-title {
+.about-hero-title,
+.page-hero-title {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 3rem;
+  font-size: 3.25rem;
   font-weight: 700;
   line-height: 1.18;
   letter-spacing: -0.02em;
   color: #ffffff;
   @include media-breakpoint-down(sm) {
-    font-size: 2.15rem;
+    font-size: 2.25rem;
   }
 }
 

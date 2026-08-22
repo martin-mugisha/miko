@@ -10420,15 +10420,20 @@ h5,
   margin-bottom: 0;
 }
 
-/* Editorial About Page Styles */
-.hero-wrap.about-hero-editorial {
-  height: 520px;
-  min-height: 480px;
+/* Editorial Page Hero Styles (Matching Home Hero Height) */
+.hero-wrap.about-hero-editorial,
+.hero-wrap.page-hero-editorial {
+  height: 100vh;
+  min-height: 100vh;
   position: relative;
   background-size: cover;
   background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hero-wrap.about-hero-editorial .overlay {
+.hero-wrap.about-hero-editorial .overlay,
+.hero-wrap.page-hero-editorial .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -10436,7 +10441,13 @@ h5,
   bottom: 0;
   background: linear-gradient(135deg, rgba(18, 17, 10, 0.86) 0%, rgba(35, 33, 18, 0.68) 100%);
 }
-.about-hero-subheading {
+.hero-wrap.about-hero-editorial .slider-text,
+.hero-wrap.page-hero-editorial .slider-text {
+  height: 100vh;
+  min-height: 100vh;
+}
+.about-hero-subheading,
+.page-hero-subheading {
   display: block;
   letter-spacing: 2.5px;
   color: #d4a373 !important;
@@ -10445,21 +10456,19 @@ h5,
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
-.about-hero-title {
+.about-hero-title,
+.page-hero-title {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 3rem;
+  font-size: 3.25rem;
   font-weight: 700;
   line-height: 1.18;
   letter-spacing: -0.02em;
   color: #ffffff;
 }
 @media (max-width: 767.98px) {
-  .hero-wrap.about-hero-editorial {
-    height: 400px;
-    min-height: 360px;
-  }
-  .about-hero-title {
-    font-size: 2.15rem;
+  .about-hero-title,
+  .page-hero-title {
+    font-size: 2.25rem;
   }
 }
 
