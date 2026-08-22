@@ -11456,33 +11456,59 @@ h1, h2, h3, h4, h5, h6, .heading-section h2, .slider-text h1, .project .text h3,
 /* Keep headings clean: the display type provides enough hierarchy without rules. */
 .heading-section:not(.heading-section-with-line) h2::after,
 .heading-section.heading-section-with-line::after { display: none !important; }
-html, body {
+html {
   overflow-x: hidden;
-  overflow-y: auto !important;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  touch-action: auto;
+}
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
 }
 
 body.menu-show {
   position: static !important;
-  overflow-y: auto !important;
+  overflow: visible !important;
+  height: auto !important;
 }
 
 .home-slider,
-.home-slider .owl-stage-outer,
-.home-slider .owl-stage,
-.home-slider .owl-item,
-.home-slider .slider-item,
-.home-slider .slider-text,
-.home-slider .overlay,
+.home-slider *,
 .owl-carousel,
-.owl-carousel.owl-drag .owl-item {
+.owl-carousel * {
   touch-action: pan-y !important;
   -ms-touch-action: pan-y !important;
 }
 
 @media (max-width: 991.98px) {
-  html, body { height: auto !important; overflow-x: hidden; overflow-y: auto !important; }
+  html, body {
+    height: auto !important;
+    overflow-x: hidden;
+  }
+  .ftco-animate {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .js-fullheight {
+    height: auto !important;
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+  .owl-carousel.home-slider,
+  .owl-carousel.home-slider .slider-item,
+  .owl-carousel.home-slider .slider-item .slider-text {
+    height: auto !important;
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+  .home-slider .slider-text {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
 }
 
 /* Portfolio collage dialog */

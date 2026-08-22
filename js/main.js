@@ -22,12 +22,14 @@
 
 
 	var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
+		if (!isMobileViewport) {
 			$('.js-fullheight').css('height', $(window).height());
-		});
-
+			$(window).resize(function(){
+				if (!isMobileViewport) {
+					$('.js-fullheight').css('height', $(window).height());
+				}
+			});
+		}
 	};
 	fullHeight();
 
@@ -47,13 +49,15 @@
   }
 
 	var carousel = function() {
-		$('.home-slider').owlCarousel({
+		var $homeSlider = $('.home-slider');
+		$homeSlider.owlCarousel({
 	    loop:true,
 	    autoplay: true,
 	    margin:0,
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
 	    nav:false,
+	    dots:false,
 	    autoplayHoverPause: false,
 	    items: 1,
 	    mouseDrag: false,
@@ -73,6 +77,15 @@
 	      }
 	    }
 		});
+
+		$homeSlider.on('initialized.owl.carousel refreshed.owl.carousel translated.owl.carousel', function() {
+			$(this).find('.owl-stage, .owl-stage-outer, .owl-item, .slider-item').css({
+				'touch-action': 'pan-y',
+				'-ms-touch-action': 'pan-y'
+			});
+			$(this).off('touchstart.owl.core touchmove.owl.core');
+		});
+		$homeSlider.trigger('refresh.owl.carousel');
 		$('.carousel-testimony').owlCarousel({
 			center: true,
 			loop: false,
@@ -213,6 +226,10 @@
 	counter();
 
 	var contentWayPoint = function() {
+		if (isMobileViewport) {
+			$('.ftco-animate').addClass('fadeIn ftco-animated').removeClass('item-animate');
+			return;
+		}
 		var i = 0;
 		$('.ftco-animate').waypoint( function( direction ) {
 
