@@ -10930,6 +10930,67 @@ h5,
   height: 110px;
 }
 
+/* Home Page Project Grid Enhancement - Spacious & Editorial */
+.home-project-grid {
+  margin-top: 2.5rem;
+}
+.home-project-grid .row {
+  margin-right: -18px;
+  margin-left: -18px;
+}
+.home-project-grid .col-md-6 {
+  padding-right: 18px;
+  padding-left: 18px;
+  margin-bottom: 2.5rem;
+}
+.home-project-grid .project {
+  height: 380px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(60, 49, 46, 0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.home-project-grid .project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 48px rgba(60, 49, 46, 0.2);
+}
+.home-project-grid .project .text {
+  padding: 2rem 1.75rem 1.4rem;
+  background: linear-gradient(to top, rgba(18, 17, 10, 0.9) 0%, rgba(18, 17, 10, 0.45) 60%, rgba(0, 0, 0, 0) 100%);
+}
+.home-project-grid .project .text span {
+  display: block;
+  color: #d4a373;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+.home-project-grid .project .text h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  margin-bottom: 0;
+  text-transform: none;
+}
+@media (max-width: 767.98px) {
+  .home-project-grid .row {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  .home-project-grid .col-md-6 {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 1.5rem;
+  }
+  .home-project-grid .project {
+    height: 290px;
+  }
+}
+
 #project-grid .col-md-6,
 #project-grid .col-lg-3 {
   padding: 0.75rem;
@@ -11143,10 +11204,11 @@ textarea.form-control {
 }
 
 .ftco-footer {
-  margin-top: 3rem;
+  margin-top: 0;
   font-size: 14px;
   background: #141313;
-  padding: 6em 0;
+  padding: 6em 0 3em 0;
+  width: 100%;
 }
 
 .client-marquee-section { padding: 4.5rem 0; margin-top: 2rem; overflow: hidden; background: #fff; }
