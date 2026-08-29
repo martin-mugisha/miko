@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
+      <link rel="preload" as="image" href="website%20pics/GLOVO/GLOVO%20(2).webp" fetchpriority="high" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -66,7 +67,7 @@
         <a class="navbar-brand" href="index.html"
           ><img
             id="site-logo"
-            src="images/logo.png"
+            src="images/logo.webp"
             alt="Logo"
             style="height: 40px"
         /></a>
@@ -107,7 +108,7 @@
 
     <section
       class="hero-wrap hero-wrap-2 js-fullheight page-hero-editorial"
-      style="background-image: url('website%20pics/GLOVO/GLOVO%20(2).png');"
+      style="background-image: url('website%20pics/GLOVO/GLOVO%20(2).webp');"
       data-stellar-background-ratio="0.5"
     >
       <div class="overlay"></div>
@@ -186,15 +187,24 @@
           <div class="col-md-6 order-md-last pr-md-5">
             <h2 class="h4 mb-4">Tell Us About Your Project</h2>
             <form
-              action="mailto:info@mikocreations.net"
-              method="post"
-              enctype="text/plain"
+              action="https://formsubmit.co/info@mikocreations.net"
+              method="POST"
             >
+              <!-- FormSubmit Configuration -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Project Consultation Request - MIKO Creations"
+              />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="text" name="_honey" style="display: none;" />
+
               <div class="form-group">
                 <input
                   type="text"
                   class="form-control"
-                  name="full_name"
+                  name="Full Name"
                   placeholder="Full Name"
                   required
                 />
@@ -203,16 +213,16 @@
                 <input
                   type="email"
                   class="form-control"
-                  name="email"
+                  name="Email Address"
                   placeholder="Email Address"
                   required
                 />
               </div>
               <div class="form-group">
                 <input
-                  type="text"
+                  type="tel"
                   class="form-control"
-                  name="phone"
+                  name="Phone Number"
                   placeholder="Phone Number"
                 />
               </div>
@@ -220,7 +230,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="project_type"
+                  name="Project Type"
                   placeholder="Project Type"
                 />
               </div>
@@ -228,13 +238,13 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="location"
+                  name="Location"
                   placeholder="Location"
                 />
               </div>
               <div class="form-group">
                 <textarea
-                  name="message"
+                  name="Message"
                   id="message"
                   cols="30"
                   rows="7"
@@ -271,7 +281,7 @@
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">
-                <img src="images/logo.png" alt="Logo" style="height: 40px" />
+                <img src="images/logo.webp" alt="Logo" style="height: 40px" / loading="lazy" decoding="async">
               </h2>
               <p>
                 Designing timeless, functional, and sustainable spaces that
@@ -430,7 +440,7 @@
 
         function updateLogo() {
           var isFixed = navbar.classList.contains("scrolled");
-          logo.src = isFixed ? "images/logo_black.png" : "images/logo.png";
+          logo.src = isFixed ? "images/logo_black.webp" : "images/logo.webp";
         }
 
         window.addEventListener("scroll", updateLogo);

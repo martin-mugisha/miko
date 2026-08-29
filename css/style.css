@@ -9915,7 +9915,7 @@ h5,
   right: 0;
   bottom: 0;
   content: "";
-  opacity: 0.2;
+  opacity: 0.62;
   background: #000000;
 }
 .hero-wrap .slider-text {
@@ -10081,7 +10081,7 @@ h5,
   left: 0;
   right: 0;
   background: #000000;
-  opacity: 0.3;
+  opacity: 0.62;
 }
 .owl-carousel.home-slider .slider-item .slider-text {
   height: 750px;
@@ -10125,7 +10125,7 @@ h5,
 }
 .owl-carousel.home-slider .slider-item .slider-text .text {
   padding-left: 2em;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.45);
   position: relative;
 }
 .owl-carousel.home-slider .slider-item .slider-text .text:after {
