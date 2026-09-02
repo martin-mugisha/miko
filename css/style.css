@@ -10474,7 +10474,7 @@ h5,
 
 /* About Intro Section */
 .about-intro {
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   background: #ffffff;
 }
 .about-image-wrapper {
@@ -10536,7 +10536,7 @@ h5,
 /* Mission & Vision Section */
 .about-purpose-section {
   background: #fbf9f5;
-  padding: 4.5rem 0;
+  padding: 3.5rem 0;
 }
 .purpose-card {
   padding: 3.25rem 2.75rem;
@@ -10617,7 +10617,7 @@ h5,
 
 /* Philosophy 5 Principles Section */
 .philosophy-section {
-  padding: 5.5rem 0;
+  padding: 3.75rem 0;
   background: #ffffff;
 }
 .philosophy-grid-5 {
@@ -10671,7 +10671,7 @@ h5,
 
 /* Values Editorial Grid Section */
 .values-section {
-  padding: 5.5rem 0;
+  padding: 3.75rem 0;
   background: #faf8f5;
 }
 .values-editorial-grid .value-block {
@@ -10714,7 +10714,7 @@ h5,
 /* MIKO by the Numbers Stats Bar */
 .miko-stats-section {
   background: #1a1911 !important;
-  padding: 5rem 0;
+  padding: 3.75rem 0;
 }
 .miko-stats-row {
   margin-top: 1.5rem;
@@ -10753,7 +10753,7 @@ h5,
 
 /* The People Behind the Work (Craft & Team) */
 .team-craft-section {
-  padding: 5.5rem 0;
+  padding: 3.75rem 0;
   background: #ffffff;
 }
 .team-craft-card {
@@ -10812,7 +10812,7 @@ h5,
   background-size: cover;
   background-position: center center;
   background-attachment: scroll;
-  padding: 7rem 0;
+  padding: 5rem 0;
   position: relative;
 }
 .about-cta-section .cta-overlay {
@@ -10830,7 +10830,7 @@ h5,
 }
 @media (max-width: 767.98px) {
   .about-cta-section {
-    padding: 5rem 0;
+    padding: 3.75rem 0;
   }
   .about-cta-section h2 {
     font-size: 2rem;
@@ -11195,7 +11195,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-  padding: 6em 0;
+  padding: 4.5rem 0;
   position: relative;
 }
 
@@ -11207,12 +11207,12 @@ textarea.form-control {
   margin-top: 0;
   font-size: 14px;
   background: #141313;
-  padding: 6em 0 3em 0;
+  padding: 4.5rem 0 2.5rem 0;
   width: 100%;
 }
 
-.client-marquee-section { padding: 4.5rem 0; margin-top: 1rem; overflow: hidden; background: #ffffff; position: relative; }
-.client-marquee-label { margin: 0 0 2.25rem; color: #555111; font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-align: center; text-transform: uppercase; }
+.client-marquee-section { padding: 2.75rem 0; margin: 0; overflow: hidden; background: #ffffff; position: relative; }
+.client-marquee-label { margin: 0 0 1.75rem; color: #555111; font-size: 0.98rem; font-weight: 700; letter-spacing: .14em; text-align: center; text-transform: uppercase; }
 .client-marquee { width: 100%; overflow: hidden; position: relative; padding: 0.75rem 0; mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); }
 .client-marquee-track { display: flex; width: max-content; animation: mikoMarquee 26s linear infinite; will-change: transform; }
 .client-marquee:hover .client-marquee-track { animation-play-state: paused; }
@@ -11223,6 +11223,8 @@ textarea.form-control {
 .client-logo:hover img { filter: grayscale(0%); transform: scale(1.06); }
 @keyframes mikoMarquee { 0% { transform: translate3d(0, 0, 0); } 100% { transform: translate3d(-50%, 0, 0); } }
 @media (max-width: 767.98px) {
+  .client-marquee-section { padding: 2rem 0; }
+  .client-marquee-label { font-size: 0.88rem; margin-bottom: 1.25rem; }
   .client-marquee-group { gap: 2.25rem; padding-right: 2.25rem; }
   .client-logo { height: 44px; }
   .client-logo img { height: 36px; max-height: 36px; max-width: 125px; }
@@ -11242,7 +11244,7 @@ textarea.form-control {
 .service-card .btn-custom:hover { color: #3c312e; }
 
 /* Universal Design System Inheritance (Curved Images, Elevated Cards, Refined Details) */
-body .ftco-section { padding: 7em 0; }
+body .ftco-section { padding: 4.5rem 0; }
 body, p, li, input, textarea, select, button, .navbar-nav .nav-link, .btn, .btn-custom, .subheading, .service-card-number, .process-number, .client-marquee-label, .portfolio-filter { font-family: "DM Sans", Arial, sans-serif; font-weight: 400; letter-spacing: .01em; }
 h1, h2, h3, h4, h5, h6, .heading-section h2, .slider-text h1, .project .text h3, .about-hero-title, .page-hero-title { font-family: "Playfair Display", Georgia, serif; font-weight: 600; letter-spacing: 0; }
 .navbar-nav .nav-link, .btn, .btn-custom, .subheading, .service-card-number, .process-number, .client-marquee-label, .portfolio-filter { letter-spacing: .04em; }
@@ -11432,7 +11434,7 @@ h1, h2, h3, h4, h5, h6, .heading-section h2, .slider-text h1, .project .text h3,
 /* Home Conversation & Consultation Section */
 .home-conversation-section {
   background: #ffffff;
-  padding: 6rem 0;
+  padding: 4.5rem 0;
 }
 .conversation-image-wrapper {
   position: relative;
@@ -11451,7 +11453,7 @@ h1, h2, h3, h4, h5, h6, .heading-section h2, .slider-text h1, .project .text h3,
   box-shadow: 0 26px 54px rgba(60, 49, 46, 0.16);
 }
 
-@media (max-width: 767.98px) { body .ftco-section { padding: 4.75em 0; } }
+@media (max-width: 767.98px) { body .ftco-section { padding: 3rem 0; } }
 
 /* Keep headings clean: the display type provides enough hierarchy without rules. */
 .heading-section:not(.heading-section-with-line) h2::after,
