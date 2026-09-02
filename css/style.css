@@ -12375,3 +12375,34 @@ body.menu-show {
     stroke-dashoffset: -136px;
   }
 }
+
+/* ==========================================================================
+   Rendering & Loading Performance Optimizations
+   ========================================================================== */
+.ftco-footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 400px;
+}
+
+.client-marquee-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 220px;
+}
+
+.home-conversation-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 500px;
+}
+
+.about-purpose-section,
+.philosophy-section,
+.values-section,
+.miko-stats-section,
+.team-craft-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 550px;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
