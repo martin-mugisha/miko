@@ -10724,34 +10724,104 @@ h5,
 }
 .miko-stat-item {
   padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
 }
+.miko-stat-item .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.ftco-counter .miko-stat-item .stat-number-wrap,
 .miko-stat-item .stat-number-wrap {
-  display: inline-flex;
-  align-items: baseline;
-  justify-content: center;
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: baseline !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  height: 3.8rem;
+  margin: 0 auto;
 }
+.ftco-counter .miko-stat-item .number,
+.ftco-counter .miko-stat-item .number-static,
 .miko-stat-item .number,
 .miko-stat-item .number-static {
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 3.25rem;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1;
+  display: inline !important;
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 3.25rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+  vertical-align: baseline !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
+.ftco-counter .miko-stat-item .stat-suffix,
+.ftco-counter .miko-stat-item .stat-prefix,
 .miko-stat-item .stat-suffix,
 .miko-stat-item .stat-prefix {
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 2.25rem;
-  color: #d4a373;
-  font-weight: 600;
+  display: inline !important;
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 3.25rem !important;
+  color: #d4a373 !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  vertical-align: baseline !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
+.ftco-counter .miko-stat-item .stat-caption,
 .miko-stat-item .stat-caption {
-  display: block;
-  margin-top: 0.85rem;
-  font-size: 0.82rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: rgba(255, 255, 255, 0.75);
+  display: block !important;
+  margin-top: 0.65rem !important;
+  font-size: 0.82rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.14em !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  line-height: 1.4 !important;
+}
+
+@media (max-width: 991.98px) {
+  .ftco-counter .miko-stat-item .stat-number-wrap,
+  .miko-stat-item .stat-number-wrap {
+    height: 3.2rem;
+  }
+  .ftco-counter .miko-stat-item .number,
+  .ftco-counter .miko-stat-item .number-static,
+  .ftco-counter .miko-stat-item .stat-suffix,
+  .ftco-counter .miko-stat-item .stat-prefix,
+  .miko-stat-item .number,
+  .miko-stat-item .number-static,
+  .miko-stat-item .stat-suffix,
+  .miko-stat-item .stat-prefix {
+    font-size: 2.6rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ftco-counter .miko-stat-item .stat-number-wrap,
+  .miko-stat-item .stat-number-wrap {
+    height: 2.8rem;
+  }
+  .ftco-counter .miko-stat-item .number,
+  .ftco-counter .miko-stat-item .number-static,
+  .ftco-counter .miko-stat-item .stat-suffix,
+  .ftco-counter .miko-stat-item .stat-prefix,
+  .miko-stat-item .number,
+  .miko-stat-item .number-static,
+  .miko-stat-item .stat-suffix,
+  .miko-stat-item .stat-prefix {
+    font-size: 2.15rem !important;
+  }
+  .ftco-counter .miko-stat-item .stat-caption,
+  .miko-stat-item .stat-caption {
+    font-size: 0.75rem !important;
+  }
 }
 
 /* The People Behind the Work (Craft & Team) */
