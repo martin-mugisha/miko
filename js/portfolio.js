@@ -26,9 +26,12 @@
       img("CANCER_INSTITUTE", "Interior_design.webp"),
       img("CANCER_INSTITUTE", "Other_waiting_area.webp"),
       img("CANCER_INSTITUTE", "Reception.webp"),
-      img("CANCER_INSTITUTE", "Waiting_area.webp")
+      img("CANCER_INSTITUTE", "View_of_a_Waiting_station.webp"),
+      img("CANCER_INSTITUTE", "Waiting_area.webp"),
+      img("CANCER_INSTITUTE", "Waiting_area1.webp")
     ],
     glovo: [
+      img("GLOVO", "GLOVO_(9).webp"),
       img("GLOVO", "Interior_view_1.webp"),
       img("GLOVO", "Offices_view.webp"),
       img("GLOVO", "Offices_view_2.webp"),
@@ -45,7 +48,6 @@
       img("GLOVO", "Inner_view.webp"),
       img("GLOVO", "Interior_design.webp"),
       img("GLOVO", "Furniture.webp"),
-      img("GLOVO", "GLOVO_(9).webp"),
       img("GLOVO", "Bag_storage_space_1.webp"),
       img("GLOVO", "bag_storage_space_2.webp")
     ],
@@ -57,10 +59,10 @@
       img("INDIGO", "Kitchen_side_1.webp"),
       img("INDIGO", "Meeting_room_view_1.webp"),
       img("INDIGO", "Meeting_room_view_2.webp"),
-      img("INDIGO", "meeting_room_3.webp"),
       img("INDIGO", "Reception.webp"),
       img("INDIGO", "View_of_work_space_in_night.webp"),
-      img("INDIGO", "View_of_workspace_in_day.webp")
+      img("INDIGO", "View_of_workspace_in_day.webp"),
+      img("INDIGO", "meeting_room_3.webp")
     ],
     kitchens: [
       img("KITCHEN_&_WADROBES", "Kitchen_view_1.webp"),
@@ -83,6 +85,7 @@
       img("KIGO_LANDSCAPE", "Side_view.webp")
     ],
     blueberries: [
+      img("BLUE_BERRIES_HOTEL", "Logo.webp"),
       img("BLUE_BERRIES_HOTEL", "Dining_view.webp"),
       img("BLUE_BERRIES_HOTEL", "Area_view.webp"),
       img("BLUE_BERRIES_HOTEL", "Back_view.webp"),
@@ -95,18 +98,17 @@
       img("BLUE_BERRIES_HOTEL", "Front_counter_view_with_lights.webp"),
       img("BLUE_BERRIES_HOTEL", "Hall_way.webp"),
       img("BLUE_BERRIES_HOTEL", "Interior_view.webp"),
-      img("BLUE_BERRIES_HOTEL", "Logo.webp"),
       img("BLUE_BERRIES_HOTEL", "Outside_view.webp"),
       img("BLUE_BERRIES_HOTEL", "TV_Unit_view.webp"),
       img("BLUE_BERRIES_HOTEL", "Wall_unit.webp")
     ],
     eye: [
+      img("EYE_SANTE", "Company_logo_2.webp"),
       img("EYE_SANTE", "Interior_setup_1.webp"),
       img("EYE_SANTE", "Area_view_1.webp"),
       img("EYE_SANTE", "Area_view_2.webp"),
       img("EYE_SANTE", "Area_view_3.webp"),
       img("EYE_SANTE", "Company_Logo.webp"),
-      img("EYE_SANTE", "Company_logo_2.webp"),
       img("EYE_SANTE", "Hall_way.webp"),
       img("EYE_SANTE", "Side_view_of_sitting_area.webp"),
       img("EYE_SANTE", "Sitting_area_1.webp"),
@@ -121,13 +123,13 @@
       img("NAMULANDA", "Kitchen_view_without_lights.webp")
     ],
     tali: [
+      img("TALI_CAFE", "Counter.webp"),
       img("TALI_CAFE", "Dining_area_1.webp"),
       img("TALI_CAFE", "Dining_area_2.webp"),
       img("TALI_CAFE", "Dining_area_3.webp"),
       img("TALI_CAFE", "Dining_area_4.webp"),
       img("TALI_CAFE", "Dining_area_5.webp"),
       img("TALI_CAFE", "Dining_area_6.webp"),
-      img("TALI_CAFE", "Counter.webp"),
       img("TALI_CAFE", "Handwashing_area_1.webp"),
       img("TALI_CAFE", "Handwashing_area_2.webp"),
       img("TALI_CAFE", "Inside_view.webp"),
@@ -136,8 +138,8 @@
       img("TALI_CAFE", "View_of_the_dining_area.webp")
     ],
     sightsavers: [
-      img("SITE_SAVERS", "Interior_view.webp"),
       img("SITE_SAVERS", "Company_name_logo.webp"),
+      img("SITE_SAVERS", "Interior_view.webp"),
       img("SITE_SAVERS", "Consultation_area.webp"),
       img("SITE_SAVERS", "Decor.webp"),
       img("SITE_SAVERS", "Inside_view.webp"),
@@ -146,13 +148,9 @@
       img("SITE_SAVERS", "Waiting_area_2.webp")
     ],
     hospital: [
-      img("ST_JOSEPH_HOSPITAL_-_WAKISO", "A_view_of_sitting_area_&_Counter.webp"),
-      img("ST_JOSEPH_HOSPITAL_-_WAKISO", "Reception_area.webp"),
       img("ST_JOSEPH_HOSPITAL_-_WAKISO", "Reception_display.webp"),
-      img("ST_JOSEPH_HOSPITAL_-_WAKISO", "Waiting_area.webp"),
-      img("ST_JOSEPH_HOSPITAL_-_WAKISO", "View_of_a_Waiting_station.webp"),
+      img("ST_JOSEPH_HOSPITAL_-_WAKISO", "A_view_of_sitting_area_&_Counter.webp"),
       img("ST_JOSEPH_HOSPITAL_-_WAKISO", "Sitting_area.webp"),
-      img("ST_JOSEPH_HOSPITAL_-_WAKISO", "Hall_way_view.webp"),
       img("ST_JOSEPH_HOSPITAL_-_WAKISO", "Private_ward.webp"),
       img("ST_JOSEPH_HOSPITAL_-_WAKISO", "Overview_of_private_ward.webp"),
       img("ST_JOSEPH_HOSPITAL_-_WAKISO", "Patient's_ward.webp"),
